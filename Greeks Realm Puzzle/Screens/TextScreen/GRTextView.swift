@@ -1,13 +1,6 @@
-//
-//  TextView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-struct TextView: View {
+struct GRTextView: View {
     
     @Environment(\.presentationMode) var presentationMode
     var screenType: TypeScreen
@@ -36,7 +29,7 @@ struct TextView: View {
 
 // MARK: - Header
 
-extension TextView {
+extension GRTextView {
     var header: some View {
         HStack {
             Button {
@@ -67,7 +60,7 @@ extension TextView {
 
 // MARK: - Description
 
-extension TextView {
+extension GRTextView {
     var description: some View {
         VStack {
             ScrollView(showsIndicators: false) {
@@ -91,7 +84,7 @@ extension TextView {
 
 // MARK: - Buttons
 
-extension TextView {
+extension GRTextView {
     var buttons: some View {
         HStack {
             Button(action: {
@@ -112,7 +105,7 @@ extension TextView {
 }
 
 #Preview {
-    TextView(screenType: .terms)
+    GRTextView(screenType: .terms)
 }
 
 

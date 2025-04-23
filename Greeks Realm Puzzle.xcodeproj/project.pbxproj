@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F76B91D2DA1573200104736 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91A2DA1573200104736 /* LaunchView.swift */; };
-		5F76B91E2DA1573200104736 /* ThunderOlimpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91B2DA1573200104736 /* ThunderOlimpApp.swift */; };
+		5F76B91D2DA1573200104736 /* GRLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91A2DA1573200104736 /* GRLaunchView.swift */; };
+		5F76B91E2DA1573200104736 /* GreeksRealmPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91B2DA1573200104736 /* GreeksRealmPuzzleApp.swift */; };
 		5F76B91F2DA1573200104736 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9172DA1573200104736 /* Preview Assets.xcassets */; };
 		5F76B9202DA1573200104736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9192DA1573200104736 /* Assets.xcassets */; };
 		5F76B9372DA15CF400104736 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9252DA15CF400104736 /* PhotoPicker.swift */; };
@@ -24,22 +24,22 @@
 		5F76B9412DA15CF400104736 /* VibrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9292DA15CF400104736 /* VibrationManager.swift */; };
 		5F76B9452DA15DEC00104736 /* InknutAntiqua-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9442DA15DEC00104736 /* InknutAntiqua-Bold.ttf */; };
 		5F76B9482DA15E8100104736 /* olimp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9472DA15E8100104736 /* olimp.mp3 */; };
-		5F76B94B2DA2914900104736 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B94A2DA2914900104736 /* LaunchViewModel.swift */; };
-		5F76B94E2DA2921A00104736 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B94D2DA2921A00104736 /* HomeView.swift */; };
-		5F76B9512DA2927200104736 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9502DA2927200104736 /* MenuView.swift */; };
-		5F76B9532DA2927900104736 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9522DA2927900104736 /* MenuViewModel.swift */; };
+		5F76B94B2DA2914900104736 /* GRLaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B94A2DA2914900104736 /* GRLaunchViewModel.swift */; };
+		5F76B94E2DA2921A00104736 /* GRHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B94D2DA2921A00104736 /* GRHomeView.swift */; };
+		5F76B9512DA2927200104736 /* GRMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9502DA2927200104736 /* GRMenuView.swift */; };
+		5F76B9532DA2927900104736 /* GRMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9522DA2927900104736 /* GRMenuViewModel.swift */; };
 		5F76B9552DA294D200104736 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9542DA294D200104736 /* CustomToggleStyle.swift */; };
-		5F76B9E32DA2985800104736 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9E12DA2985800104736 /* TextView.swift */; };
-		5F76B9E62DA29A5F00104736 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9E52DA29A5F00104736 /* AccountView.swift */; };
-		5F76B9E82DA29A6D00104736 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9E72DA29A6D00104736 /* AccountViewModel.swift */; };
-		5F76B9EB2DA29DD700104736 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9EA2DA29DD700104736 /* LeaderboardView.swift */; };
-		5F76B9ED2DA29DDD00104736 /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9EC2DA29DDD00104736 /* LeaderboardViewModel.swift */; };
-		5F76B9F02DA29F3300104736 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9EF2DA29F3300104736 /* ShopView.swift */; };
-		5F76B9F22DA29F3900104736 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F12DA29F3900104736 /* ShopViewModel.swift */; };
-		5F76B9F52DA2A7EC00104736 /* GameTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F42DA2A7EC00104736 /* GameTypeView.swift */; };
-		5F76B9F82DA2B84C00104736 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F72DA2B84C00104736 /* LevelView.swift */; };
-		5F76B9FA2DA2B85200104736 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F92DA2B85200104736 /* LevelViewModel.swift */; };
-		5F76B9FD2DA2B89100104736 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9FC2DA2B89100104736 /* DifficultyLevel.swift */; };
+		5F76B9E32DA2985800104736 /* GRTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9E12DA2985800104736 /* GRTextView.swift */; };
+		5F76B9E62DA29A5F00104736 /* GRAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9E52DA29A5F00104736 /* GRAccountView.swift */; };
+		5F76B9E82DA29A6D00104736 /* GRAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9E72DA29A6D00104736 /* GRAccountViewModel.swift */; };
+		5F76B9EB2DA29DD700104736 /* GRLeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9EA2DA29DD700104736 /* GRLeaderboardView.swift */; };
+		5F76B9ED2DA29DDD00104736 /* GRLeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9EC2DA29DDD00104736 /* GRLeaderboardViewModel.swift */; };
+		5F76B9F02DA29F3300104736 /* GRShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9EF2DA29F3300104736 /* GRShopView.swift */; };
+		5F76B9F22DA29F3900104736 /* GRShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F12DA29F3900104736 /* GRShopViewModel.swift */; };
+		5F76B9F52DA2A7EC00104736 /* GRGameTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F42DA2A7EC00104736 /* GRGameTypeView.swift */; };
+		5F76B9F82DA2B84C00104736 /* GRLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F72DA2B84C00104736 /* GRLevelView.swift */; };
+		5F76B9FA2DA2B85200104736 /* GRLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9F92DA2B85200104736 /* GRLevelViewModel.swift */; };
+		5F76B9FD2DA2B89100104736 /* GRDifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */; };
 		5F76BA062DA2C02D00104736 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA032DA2C02D00104736 /* GameView.swift */; };
 		5F76BA072DA2C02D00104736 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA042DA2C02D00104736 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -48,8 +48,8 @@
 		5F76B8FD2DA1566900104736 /* Greeks Realm Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greeks Realm Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F76B9172DA1573200104736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F76B9192DA1573200104736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5F76B91A2DA1573200104736 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
-		5F76B91B2DA1573200104736 /* ThunderOlimpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderOlimpApp.swift; sourceTree = "<group>"; };
+		5F76B91A2DA1573200104736 /* GRLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLaunchView.swift; sourceTree = "<group>"; };
+		5F76B91B2DA1573200104736 /* GreeksRealmPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeksRealmPuzzleApp.swift; sourceTree = "<group>"; };
 		5F76B9232DA15CF400104736 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		5F76B9242DA15CF400104736 /* AlbumPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPicker.swift; sourceTree = "<group>"; };
 		5F76B9252DA15CF400104736 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
@@ -64,22 +64,22 @@
 		5F76B9442DA15DEC00104736 /* InknutAntiqua-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InknutAntiqua-Bold.ttf"; sourceTree = "<group>"; };
 		5F76B9462DA15E0600104736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		5F76B9472DA15E8100104736 /* olimp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = olimp.mp3; sourceTree = "<group>"; };
-		5F76B94A2DA2914900104736 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
-		5F76B94D2DA2921A00104736 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		5F76B9502DA2927200104736 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		5F76B9522DA2927900104736 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		5F76B94A2DA2914900104736 /* GRLaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLaunchViewModel.swift; sourceTree = "<group>"; };
+		5F76B94D2DA2921A00104736 /* GRHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRHomeView.swift; sourceTree = "<group>"; };
+		5F76B9502DA2927200104736 /* GRMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRMenuView.swift; sourceTree = "<group>"; };
+		5F76B9522DA2927900104736 /* GRMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRMenuViewModel.swift; sourceTree = "<group>"; };
 		5F76B9542DA294D200104736 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
-		5F76B9E12DA2985800104736 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
-		5F76B9E52DA29A5F00104736 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		5F76B9E72DA29A6D00104736 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		5F76B9EA2DA29DD700104736 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
-		5F76B9EC2DA29DDD00104736 /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
-		5F76B9EF2DA29F3300104736 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
-		5F76B9F12DA29F3900104736 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
-		5F76B9F42DA2A7EC00104736 /* GameTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTypeView.swift; sourceTree = "<group>"; };
-		5F76B9F72DA2B84C00104736 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
-		5F76B9F92DA2B85200104736 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModel.swift; sourceTree = "<group>"; };
-		5F76B9FC2DA2B89100104736 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		5F76B9E12DA2985800104736 /* GRTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRTextView.swift; sourceTree = "<group>"; };
+		5F76B9E52DA29A5F00104736 /* GRAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRAccountView.swift; sourceTree = "<group>"; };
+		5F76B9E72DA29A6D00104736 /* GRAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRAccountViewModel.swift; sourceTree = "<group>"; };
+		5F76B9EA2DA29DD700104736 /* GRLeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLeaderboardView.swift; sourceTree = "<group>"; };
+		5F76B9EC2DA29DDD00104736 /* GRLeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLeaderboardViewModel.swift; sourceTree = "<group>"; };
+		5F76B9EF2DA29F3300104736 /* GRShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRShopView.swift; sourceTree = "<group>"; };
+		5F76B9F12DA29F3900104736 /* GRShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRShopViewModel.swift; sourceTree = "<group>"; };
+		5F76B9F42DA2A7EC00104736 /* GRGameTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRGameTypeView.swift; sourceTree = "<group>"; };
+		5F76B9F72DA2B84C00104736 /* GRLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLevelView.swift; sourceTree = "<group>"; };
+		5F76B9F92DA2B85200104736 /* GRLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLevelViewModel.swift; sourceTree = "<group>"; };
+		5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDifficultyLevel.swift; sourceTree = "<group>"; };
 		5F76BA032DA2C02D00104736 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5F76BA042DA2C02D00104736 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +139,7 @@
 		5F76B9212DA1573800104736 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B91B2DA1573200104736 /* ThunderOlimpApp.swift */,
+				5F76B91B2DA1573200104736 /* GreeksRealmPuzzleApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -229,8 +229,8 @@
 		5F76B9492DA289BA00104736 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B91A2DA1573200104736 /* LaunchView.swift */,
-				5F76B94A2DA2914900104736 /* LaunchViewModel.swift */,
+				5F76B91A2DA1573200104736 /* GRLaunchView.swift */,
+				5F76B94A2DA2914900104736 /* GRLaunchViewModel.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 		5F76B94C2DA2920D00104736 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B94D2DA2921A00104736 /* HomeView.swift */,
+				5F76B94D2DA2921A00104736 /* GRHomeView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -246,8 +246,8 @@
 		5F76B94F2DA2926B00104736 /* MenuScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B9502DA2927200104736 /* MenuView.swift */,
-				5F76B9522DA2927900104736 /* MenuViewModel.swift */,
+				5F76B9502DA2927200104736 /* GRMenuView.swift */,
+				5F76B9522DA2927900104736 /* GRMenuViewModel.swift */,
 			);
 			path = MenuScreen;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 		5F76B9E22DA2985800104736 /* TextScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B9E12DA2985800104736 /* TextView.swift */,
+				5F76B9E12DA2985800104736 /* GRTextView.swift */,
 			);
 			path = TextScreen;
 			sourceTree = "<group>";
@@ -263,8 +263,8 @@
 		5F76B9E42DA29A5800104736 /* AccountScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B9E52DA29A5F00104736 /* AccountView.swift */,
-				5F76B9E72DA29A6D00104736 /* AccountViewModel.swift */,
+				5F76B9E52DA29A5F00104736 /* GRAccountView.swift */,
+				5F76B9E72DA29A6D00104736 /* GRAccountViewModel.swift */,
 			);
 			path = AccountScreen;
 			sourceTree = "<group>";
@@ -272,8 +272,8 @@
 		5F76B9E92DA29DB900104736 /* LeaderboardScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B9EA2DA29DD700104736 /* LeaderboardView.swift */,
-				5F76B9EC2DA29DDD00104736 /* LeaderboardViewModel.swift */,
+				5F76B9EA2DA29DD700104736 /* GRLeaderboardView.swift */,
+				5F76B9EC2DA29DDD00104736 /* GRLeaderboardViewModel.swift */,
 			);
 			path = LeaderboardScreen;
 			sourceTree = "<group>";
@@ -281,8 +281,8 @@
 		5F76B9EE2DA29F2B00104736 /* ShopScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B9EF2DA29F3300104736 /* ShopView.swift */,
-				5F76B9F12DA29F3900104736 /* ShopViewModel.swift */,
+				5F76B9EF2DA29F3300104736 /* GRShopView.swift */,
+				5F76B9F12DA29F3900104736 /* GRShopViewModel.swift */,
 			);
 			path = ShopScreen;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 		5F76B9F32DA2A7CD00104736 /* GameTypeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B9F42DA2A7EC00104736 /* GameTypeView.swift */,
+				5F76B9F42DA2A7EC00104736 /* GRGameTypeView.swift */,
 			);
 			path = GameTypeScreen;
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 		5F76B9F62DA2B5C600104736 /* LevelScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5F76B9F72DA2B84C00104736 /* LevelView.swift */,
-				5F76B9F92DA2B85200104736 /* LevelViewModel.swift */,
-				5F76B9FC2DA2B89100104736 /* DifficultyLevel.swift */,
+				5F76B9F72DA2B84C00104736 /* GRLevelView.swift */,
+				5F76B9F92DA2B85200104736 /* GRLevelViewModel.swift */,
+				5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */,
 			);
 			path = LevelScreen;
 			sourceTree = "<group>";
@@ -389,36 +389,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F76B91D2DA1573200104736 /* LaunchView.swift in Sources */,
-				5F76B9E82DA29A6D00104736 /* AccountViewModel.swift in Sources */,
-				5F76B9F52DA2A7EC00104736 /* GameTypeView.swift in Sources */,
-				5F76B91E2DA1573200104736 /* ThunderOlimpApp.swift in Sources */,
+				5F76B91D2DA1573200104736 /* GRLaunchView.swift in Sources */,
+				5F76B9E82DA29A6D00104736 /* GRAccountViewModel.swift in Sources */,
+				5F76B9F52DA2A7EC00104736 /* GRGameTypeView.swift in Sources */,
+				5F76B91E2DA1573200104736 /* GreeksRealmPuzzleApp.swift in Sources */,
 				5F76B9552DA294D200104736 /* CustomToggleStyle.swift in Sources */,
 				5F76B9372DA15CF400104736 /* PhotoPicker.swift in Sources */,
-				5F76B9E62DA29A5F00104736 /* AccountView.swift in Sources */,
-				5F76B9F02DA29F3300104736 /* ShopView.swift in Sources */,
-				5F76B94E2DA2921A00104736 /* HomeView.swift in Sources */,
-				5F76B9ED2DA29DDD00104736 /* LeaderboardViewModel.swift in Sources */,
+				5F76B9E62DA29A5F00104736 /* GRAccountView.swift in Sources */,
+				5F76B9F02DA29F3300104736 /* GRShopView.swift in Sources */,
+				5F76B94E2DA2921A00104736 /* GRHomeView.swift in Sources */,
+				5F76B9ED2DA29DDD00104736 /* GRLeaderboardViewModel.swift in Sources */,
 				5F76B9382DA15CF400104736 /* View+Extensions.swift in Sources */,
-				5F76B9FA2DA2B85200104736 /* LevelViewModel.swift in Sources */,
-				5F76B9FD2DA2B89100104736 /* DifficultyLevel.swift in Sources */,
+				5F76B9FA2DA2B85200104736 /* GRLevelViewModel.swift in Sources */,
+				5F76B9FD2DA2B89100104736 /* GRDifficultyLevel.swift in Sources */,
 				5F76B9392DA15CF400104736 /* CustomBackground.swift in Sources */,
 				5F76B93A2DA15CF400104736 /* Font+Extensions.swift in Sources */,
-				5F76B9F82DA2B84C00104736 /* LevelView.swift in Sources */,
+				5F76B9F82DA2B84C00104736 /* GRLevelView.swift in Sources */,
 				5F76B93B2DA15CF400104736 /* CameraPicker.swift in Sources */,
 				5F76B93C2DA15CF400104736 /* Color+Extensions.swift in Sources */,
-				5F76B9512DA2927200104736 /* MenuView.swift in Sources */,
+				5F76B9512DA2927200104736 /* GRMenuView.swift in Sources */,
 				5F76B93D2DA15CF400104736 /* PhotoManager.swift in Sources */,
-				5F76B94B2DA2914900104736 /* LaunchViewModel.swift in Sources */,
+				5F76B94B2DA2914900104736 /* GRLaunchViewModel.swift in Sources */,
 				5F76B93E2DA15CF400104736 /* SoundManager.swift in Sources */,
 				5F76BA062DA2C02D00104736 /* GameView.swift in Sources */,
 				5F76BA072DA2C02D00104736 /* GameViewModel.swift in Sources */,
 				5F76B93F2DA15CF400104736 /* ShapeStyle+Extensions.swift in Sources */,
-				5F76B9F22DA29F3900104736 /* ShopViewModel.swift in Sources */,
-				5F76B9532DA2927900104736 /* MenuViewModel.swift in Sources */,
-				5F76B9EB2DA29DD700104736 /* LeaderboardView.swift in Sources */,
+				5F76B9F22DA29F3900104736 /* GRShopViewModel.swift in Sources */,
+				5F76B9532DA2927900104736 /* GRMenuViewModel.swift in Sources */,
+				5F76B9EB2DA29DD700104736 /* GRLeaderboardView.swift in Sources */,
 				5F76B9402DA15CF400104736 /* AlbumPicker.swift in Sources */,
-				5F76B9E32DA2985800104736 /* TextView.swift in Sources */,
+				5F76B9E32DA2985800104736 /* GRTextView.swift in Sources */,
 				5F76B9412DA15CF400104736 /* VibrationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +557,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Greeks Realm Puzzle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take a profile photo for your account.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -593,6 +594,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Greeks Realm Puzzle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take a profile photo for your account.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

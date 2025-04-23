@@ -1,13 +1,6 @@
-//
-//  HomeView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-struct HomeView: View {
+struct GRHomeView: View {
     var body: some View {
         VStack {
             header
@@ -30,12 +23,12 @@ struct HomeView: View {
 
 // MARK: - Header
 
-extension HomeView {
+extension GRHomeView {
     var header: some View {
         HStack {
             Spacer()
             NavigationLink {
-                MenuView()
+                GRMenuView()
             } label: {
                 Image(.settings)
                     .resizable()
@@ -48,10 +41,10 @@ extension HomeView {
 
 // MARK: - Play Button
 
-extension HomeView {
+extension GRHomeView {
     var playButton: some View {
         NavigationLink {
-            GameTypeView()
+            GRGameTypeView()
         } label: {
             Image(.play)
                 .resizable()
@@ -62,5 +55,5 @@ extension HomeView {
 }
 
 #Preview {
-    HomeView()
+    GRHomeView()
 }

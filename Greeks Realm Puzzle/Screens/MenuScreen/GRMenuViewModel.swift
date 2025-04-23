@@ -1,14 +1,7 @@
-//
-//  MenuViewModel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 import StoreKit
 
-final class MenuViewModel: ObservableObject {
+final class GRMenuViewModel: ObservableObject {
     
     @ObservedObject var soundAvManager = SoundManager.shared
     @ObservedObject var vibrationManager = VibrationManager.shared
@@ -44,7 +37,7 @@ final class MenuViewModel: ObservableObject {
     
 }
 
-extension MenuViewModel {
+extension GRMenuViewModel {
     func toggleMusic(_ isEnabled: Bool) {
         soundAvManager.toggleMusic(isEnabled)
     }

@@ -1,17 +1,10 @@
-//
-//  ShopView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-struct ShopView: View {
+struct GRShopView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @StateObject var viewModel = ShopViewModel()
+    @StateObject var viewModel = GRShopViewModel()
     
     var body: some View {
         VStack(spacing: 10) {
@@ -36,7 +29,7 @@ struct ShopView: View {
     }
 }
 
-extension ShopView {
+extension GRShopView {
     var header: some View {
         ZStack {
             HStack {
@@ -76,7 +69,7 @@ extension ShopView {
     }
 }
 
-extension ShopView {
+extension GRShopView {
     var content: some View {
         VStack(spacing: 20) {
             HStack {
@@ -122,5 +115,5 @@ extension ShopView {
 }
 
 #Preview {
-    ShopView()
+    GRShopView()
 }

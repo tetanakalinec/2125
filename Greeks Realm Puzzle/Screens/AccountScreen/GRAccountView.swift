@@ -1,13 +1,6 @@
-//
-//  AccountView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-struct AccountView: View {
+struct GRAccountView: View {
     
     // MARK: - @State
     @State private var inputImage: UIImage?
@@ -16,7 +9,7 @@ struct AccountView: View {
     @Environment(\.presentationMode) var presentationMode
     
     // MARK: - @StateObject
-    @StateObject var viewModel = AccountViewModel()
+    @StateObject var viewModel = GRAccountViewModel()
     
     // MARK: - @ObservedObject
     @ObservedObject var imageManager = PhotoManager.shared
@@ -70,7 +63,7 @@ struct AccountView: View {
 
 // MARK: - Header
 
-extension AccountView {
+extension GRAccountView {
     var header: some View {
         HStack {
             Button {
@@ -99,7 +92,7 @@ extension AccountView {
     }
 }
 
-extension AccountView {
+extension GRAccountView {
     var accountInfoContainer: some View {
         VStack(spacing: 0) {
             accountPhotoContainer
@@ -118,7 +111,7 @@ extension AccountView {
 
 // MARK: - Account Photo Container
 
-extension AccountView {
+extension GRAccountView {
     var accountPhotoContainer: some View {
         VStack {
             if let profileImage = imageManager.profileImage {
@@ -155,7 +148,7 @@ extension AccountView {
 
 // MARK: - Name TextField
 
-extension AccountView {
+extension GRAccountView {
     var nameTextField: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text("User name")
@@ -185,7 +178,7 @@ extension AccountView {
 
 // MARK: - Private Methods
 
-private extension AccountView {
+private extension GRAccountView {
     func loadImage() {
         if let inputImage = inputImage {
             imageManager.profileImage = inputImage
@@ -195,5 +188,5 @@ private extension AccountView {
 
 
 #Preview {
-    AccountView()
+    GRAccountView()
 }

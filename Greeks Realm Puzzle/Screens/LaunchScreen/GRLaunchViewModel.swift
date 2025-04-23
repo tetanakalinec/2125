@@ -1,13 +1,6 @@
-//
-//  LaunchViewModel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-final class LaunchViewModel: ObservableObject {
+final class GRLaunchViewModel: ObservableObject {
     @Published var navigateToHome = false
     @AppStorage("isMusicEnabled") var isMusicEnabled: Bool = false
     let soundManager = SoundManager.shared

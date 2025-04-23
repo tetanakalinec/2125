@@ -1,10 +1,3 @@
-//
-//  GameView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
 struct GameView: View {

@@ -1,10 +1,3 @@
-//
-//  LevelViewModel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
 enum LevelState {
@@ -21,7 +14,7 @@ enum LevelState {
     }
 }
 
-final class LevelViewModel: ObservableObject {
+final class GRLevelViewModel: ObservableObject {
     @AppStorage("easyLevel1Unlocked") private var easyLevel1Unlocked: Bool = true
     @AppStorage("easyLevel2Unlocked") private var easyLevel2Unlocked: Bool = false
     @AppStorage("easyLevel3Unlocked") private var easyLevel3Unlocked: Bool = false
@@ -37,7 +30,7 @@ final class LevelViewModel: ObservableObject {
     @AppStorage("hardLevel3Unlocked") private var hardLevel3Unlocked: Bool = false
     @AppStorage("hardLevel4Unlocked") private var hardLevel4Unlocked: Bool = false
 
-    @Published var unlockedLevels: [DifficultyLevel: [Bool]] = [:]
+    @Published var unlockedLevels: [GRDifficultyLevel: [Bool]] = [:]
 
     init() {
         loadLevels()

@@ -1,16 +1,9 @@
-//
-//  LeaderboardView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-struct LeaderboardView: View {
+struct GRLeaderboardView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @StateObject private var viewModel = LeaderboardViewModel()
+    @StateObject private var viewModel = GRLeaderboardViewModel()
     
     var body: some View {
         VStack {
@@ -40,7 +33,7 @@ struct LeaderboardView: View {
 
 // MARK: - Header
 
-extension LeaderboardView {
+extension GRLeaderboardView {
     var header: some View {
         HStack {
             Button {
@@ -72,7 +65,7 @@ extension LeaderboardView {
 
 // MARK: - ListContainer
 
-extension LeaderboardView {
+extension GRLeaderboardView {
     var listContainer: some View {
         VStack(spacing: 20) {
             list
@@ -85,7 +78,7 @@ extension LeaderboardView {
 
 // MARK: - ListContainer
 
-extension LeaderboardView {
+extension GRLeaderboardView {
     var list: some View {
         ScrollView(showsIndicators: false) {
             ForEach(Array(viewModel.sortedLeaderboard.prefix(15).enumerated()), id: \.element.key) {
@@ -124,5 +117,5 @@ extension LeaderboardView {
 }
 
 #Preview {
-    LeaderboardView()
+    GRLeaderboardView()
 }

@@ -1,14 +1,7 @@
-//
-//  AccountViewModel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 import AVFoundation
 
-final class AccountViewModel: ObservableObject {
+final class GRAccountViewModel: ObservableObject {
     
     @Published var showingImagePicker = false
     @Published var showingCameraPicker = false

@@ -1,17 +1,10 @@
-//
-//  MenuView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-struct MenuView: View {
+struct GRMenuView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @StateObject var viewModel = MenuViewModel()
+    @StateObject var viewModel = GRMenuViewModel()
     
     var body: some View {
         VStack(spacing: 20) {
@@ -36,7 +29,7 @@ struct MenuView: View {
 
 // MARK: - Header
 
-extension MenuView {
+extension GRMenuView {
     var header: some View {
         HStack {
             Button {
@@ -66,10 +59,10 @@ extension MenuView {
     }
 }
 
-extension MenuView {
+extension GRMenuView {
     var content: some View {
         VStack {
-            MenuItem(title: "My account", destination: AccountView())
+            MenuItem(title: "My account", destination: GRAccountView())
             Toggle(isOn: $viewModel.isMusicEnabled, label: {
                 Text("Sound")
             })
@@ -89,8 +82,8 @@ extension MenuView {
             .onChange(of: viewModel.isVibrationEnabled) { newValue in
                 viewModel.toggleVibration(newValue)
             }
-            MenuItem(title: "Privacy Policy", destination: TextView(screenType: .policy))
-            MenuItem(title: "Terms of use", destination: TextView(screenType: .terms))
+            MenuItem(title: "Privacy Policy", destination: GRTextView(screenType: .policy))
+            MenuItem(title: "Terms of use", destination: GRTextView(screenType: .terms))
             Button {
                 viewModel.clearData()
             } label: {
@@ -119,8 +112,8 @@ extension MenuView {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .frame(height: 50)
             }
-            MenuItem(title: "Leaderboard", destination: LeaderboardView())
-            MenuItem(title: "Shop", destination: ShopView())
+            MenuItem(title: "Leaderboard", destination: GRLeaderboardView())
+            MenuItem(title: "Shop", destination: GRShopView())
         }
         .padding()
         .foregroundStyle(.white)
@@ -157,5 +150,5 @@ struct MenuItem<Destination: View>: View {
 }
 
 #Preview {
-    MenuView()
+    GRMenuView()
 }

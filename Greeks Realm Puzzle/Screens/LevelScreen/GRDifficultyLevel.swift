@@ -1,13 +1,6 @@
-//
-//  DifficultyLevel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-enum DifficultyLevel: CaseIterable {
+enum GRDifficultyLevel: CaseIterable {
     case easy
     case medium
     case hard
@@ -67,7 +60,7 @@ enum DifficultyLevel: CaseIterable {
         }
     }
 
-    var nextDifficultyLevel: DifficultyLevel? {
+    var nextDifficultyLevel: GRDifficultyLevel? {
         switch self {
         case .easy:
             return .medium

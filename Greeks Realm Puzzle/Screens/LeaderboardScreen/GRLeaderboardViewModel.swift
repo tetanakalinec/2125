@@ -1,13 +1,6 @@
-//
-//  LeaderboardViewModel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-final class LeaderboardViewModel: ObservableObject {
+final class GRLeaderboardViewModel: ObservableObject {
     
     @AppStorage("name") private var name: String = ""
     @AppStorage("bestScore") private var bestScore: Int = 0
@@ -33,7 +26,7 @@ final class LeaderboardViewModel: ObservableObject {
     }
 }
 
-extension LeaderboardViewModel {
+extension GRLeaderboardViewModel {
     func updateLeaderboard() {
         var leaderBoard = JestersLeaderboard.list
         let playerName = name.isEmpty ? "User" : name

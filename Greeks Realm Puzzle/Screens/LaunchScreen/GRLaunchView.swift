@@ -1,15 +1,8 @@
-//
-//  LaunchView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 05.04.2025.
-//
-
 import SwiftUI
 
-struct LaunchView: View {
+struct GRLaunchView: View {
     
-    @StateObject private var viewModel = LaunchViewModel()
+    @StateObject private var viewModel = GRLaunchViewModel()
 
     var body: some View {
         NavigationView {
@@ -17,7 +10,7 @@ struct LaunchView: View {
                
                 // - Transition
                 NavigationLink(
-                    destination: HomeView(),
+                    destination: GRHomeView(),
                     isActive: $viewModel.navigateToHome
                 ) {
                     EmptyView()
@@ -44,5 +37,5 @@ struct LaunchView: View {
 }
 
 #Preview {
-    LaunchView()
+    GRLaunchView()
 }

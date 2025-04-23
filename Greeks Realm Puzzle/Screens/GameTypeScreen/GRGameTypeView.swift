@@ -1,17 +1,10 @@
-//
-//  GameTypeView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
 enum GameType {
     case arcada, campaign
 }
 
-struct GameTypeView: View {
+struct GRGameTypeView: View {
     
     @AppStorage("selectedMapIndex") var selectedMapIndex: Int = 0
     
@@ -31,7 +24,7 @@ struct GameTypeView: View {
             .padding(.top, 30)
             
             NavigationLink {
-                LevelView()
+                GRLevelView()
             } label: {
                 Image(.campaign)
             }
@@ -54,7 +47,7 @@ struct GameTypeView: View {
 
 // MARK: - Header
 
-extension GameTypeView {
+extension GRGameTypeView {
     var header: some View {
         HStack {
             Button {
@@ -68,7 +61,7 @@ extension GameTypeView {
             Spacer()
             
             NavigationLink {
-                MenuView()
+                GRMenuView()
             } label: {
                 Image(.settings)
                     .resizable()
@@ -79,7 +72,7 @@ extension GameTypeView {
     }
 }
 
-extension GameTypeView {
+extension GRGameTypeView {
     func selectedMap(index: Int) -> GameView {
         if index == 0 {
             return GameView(
@@ -118,5 +111,5 @@ extension GameTypeView {
 }
 
 #Preview {
-    GameTypeView()
+    GRGameTypeView()
 }

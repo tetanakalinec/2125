@@ -1,13 +1,6 @@
-//
-//  ShopViewModel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-final class ShopViewModel: ObservableObject {
+final class GRShopViewModel: ObservableObject {
     
     @AppStorage("coins") var coins: Int = 0
     

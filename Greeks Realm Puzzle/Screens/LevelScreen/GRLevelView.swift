@@ -1,18 +1,11 @@
-//
-//  LevelView.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
-struct LevelView: View {
+struct GRLevelView: View {
 
     @Environment(\.presentationMode) var presentationMode
-    @StateObject private var viewModel = LevelViewModel()
+    @StateObject private var viewModel = GRLevelViewModel()
     @State var levelState: LevelState = .level
-    @State var selectedDifficulty: DifficultyLevel = .easy
+    @State var selectedDifficulty: GRDifficultyLevel = .easy
     @State var selectedGame: Int = 1
 
     var body: some View {
@@ -44,7 +37,7 @@ struct LevelView: View {
 
 // MARK: - Header
 
-extension LevelView {
+extension GRLevelView {
     var header: some View {
         HStack {
             Button {
@@ -61,7 +54,7 @@ extension LevelView {
             Spacer()
 
             NavigationLink {
-                MenuView()
+                GRMenuView()
             } label: {
                 Image(.settings)
                     .resizable()
@@ -75,7 +68,7 @@ extension LevelView {
 
 // MARK: - ContainerTitle
 
-extension LevelView {
+extension GRLevelView {
     var containerTitle: some View {
         Text(levelState.title.uppercased())
             .foregroundColor(.white)
@@ -85,7 +78,7 @@ extension LevelView {
 
 // MARK: - Level Container
 
-extension LevelView {
+extension GRLevelView {
     var levelContainer: some View {
         VStack(spacing: 10) {
             containerTitle
@@ -102,10 +95,10 @@ extension LevelView {
 
 // MARK: - Levels
 
-extension LevelView {
+extension GRLevelView {
     var levels: some View {
         VStack(spacing: 30) {
-            ForEach(DifficultyLevel.allCases, id: \.self) { level in
+            ForEach(GRDifficultyLevel.allCases, id: \.self) { level in
                 if let isUnlocked = viewModel.unlockedLevels[level]?[0], isUnlocked {
                     // Level is unlocked
                     Button {
@@ -145,7 +138,7 @@ extension LevelView {
 
 // MARK: - Games
 
-extension LevelView {
+extension GRLevelView {
     var games: some View {
         VStack(spacing: 10) {
             ForEach(1...4, id: \.self) { index in
@@ -183,7 +176,7 @@ extension LevelView {
 
 // MARK: - Play Button
 
-extension LevelView {
+extension GRLevelView {
     var playButton: some View {
         NavigationLink(
             destination: Group {
@@ -211,5 +204,5 @@ extension LevelView {
 }
 
 #Preview {
-    LevelView()
+    GRLevelView()
 }

@@ -1,10 +1,3 @@
-//
-//  BlurredBackground.swift
-//  Jesters challenge
-//
-//  Created by Дмитрий Процак on 29.08.2024.
-//
-
 import SwiftUI
 
 struct CustomBackground: ViewModifier {

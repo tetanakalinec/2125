@@ -1,10 +1,3 @@
-//
-//  GameViewModel.swift
-//  Thunder Olimp
-//
-//  Created by Protsak Dmytro on 06.04.2025.
-//
-
 import SwiftUI
 
 struct PuzzlePiece: Identifiable {
@@ -34,7 +27,7 @@ final class GameViewModel: ObservableObject {
     
     @ObservedObject var vibrationManager = VibrationManager.shared
 
-    @Published var difficultyLevel: DifficultyLevel
+    @Published var difficultyLevel: GRDifficultyLevel
     @Published var gameNumber: Int
     var gameType: GameType
 
@@ -47,7 +40,7 @@ final class GameViewModel: ObservableObject {
     private var totalTime: Int
     private var timer: Timer?
 
-    init(difficultyLevel: DifficultyLevel, gameNumber: Int, gameType: GameType) {
+    init(difficultyLevel: GRDifficultyLevel, gameNumber: Int, gameType: GameType) {
         self.difficultyLevel = difficultyLevel
         self.gameNumber = gameNumber
         self.gameType = gameType

@@ -44,5 +44,5 @@ struct CustomToggleStyle: ToggleStyle {
 }
 
 #Preview {
-    MenuView()
+    GRMenuView()
 }
