@@ -1,0 +1,6 @@
+framework module Pods_Greeks_Realm_Puzzle {
+  umbrella header "Pods-Greeks Realm Puzzle-umbrella.h"
+
+  export *
+  module * { export * }
+}

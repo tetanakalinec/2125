@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,9 +42,12 @@
 		5F76B9FD2DA2B89100104736 /* GRDifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */; };
 		5F76BA062DA2C02D00104736 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA032DA2C02D00104736 /* GameView.swift */; };
 		5F76BA072DA2C02D00104736 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA042DA2C02D00104736 /* GameViewModel.swift */; };
+		FCAB25AFBA0424D50287F3E7 /* Pods_Greeks_Realm_Puzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5D50DEB28238022562B9D1 /* Pods_Greeks_Realm_Puzzle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2300FEAF839E7905938C62C1 /* Pods-Greeks Realm Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Greeks Realm Puzzle.debug.xcconfig"; path = "Target Support Files/Pods-Greeks Realm Puzzle/Pods-Greeks Realm Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		2A4297193662FBCAB61D9810 /* Pods-Greeks Realm Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Greeks Realm Puzzle.release.xcconfig"; path = "Target Support Files/Pods-Greeks Realm Puzzle/Pods-Greeks Realm Puzzle.release.xcconfig"; sourceTree = "<group>"; };
 		5F76B8FD2DA1566900104736 /* Greeks Realm Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greeks Realm Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F76B9172DA1573200104736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F76B9192DA1573200104736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDifficultyLevel.swift; sourceTree = "<group>"; };
 		5F76BA032DA2C02D00104736 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5F76BA042DA2C02D00104736 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		8D5D50DEB28238022562B9D1 /* Pods_Greeks_Realm_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Greeks_Realm_Puzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +93,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAB25AFBA0424D50287F3E7 /* Pods_Greeks_Realm_Puzzle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0799F7C96B9AF25E88B94062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2300FEAF839E7905938C62C1 /* Pods-Greeks Realm Puzzle.debug.xcconfig */,
+				2A4297193662FBCAB61D9810 /* Pods-Greeks Realm Puzzle.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5F76B8F42DA1566900104736 = {
 			isa = PBXGroup;
 			children = (
 				5F76B91C2DA1573200104736 /* Greeks Realm Puzzle */,
 				5F76B8FE2DA1566900104736 /* Products */,
+				0799F7C96B9AF25E88B94062 /* Pods */,
+				D9EB10F8B6FB1117AE6538C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,6 +331,14 @@
 			path = GameScreen;
 			sourceTree = "<group>";
 		};
+		D9EB10F8B6FB1117AE6538C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5D50DEB28238022562B9D1 /* Pods_Greeks_Realm_Puzzle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +346,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F76B90B2DA1566B00104736 /* Build configuration list for PBXNativeTarget "Greeks Realm Puzzle" */;
 			buildPhases = (
+				40B7C1B66C53B6796DDBE6A3 /* [CP] Check Pods Manifest.lock */,
 				5F76B8F92DA1566900104736 /* Sources */,
 				5F76B8FA2DA1566900104736 /* Frameworks */,
 				5F76B8FB2DA1566900104736 /* Resources */,
@@ -330,8 +356,6 @@
 			dependencies = (
 			);
 			name = "Greeks Realm Puzzle";
-			packageProductDependencies = (
-			);
 			productName = "Thunder Olimp";
 			productReference = 5F76B8FD2DA1566900104736 /* Greeks Realm Puzzle.app */;
 			productType = "com.apple.product-type.application";
@@ -359,8 +383,6 @@
 				Base,
 			);
 			mainGroup = 5F76B8F42DA1566900104736;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 5F76B8FE2DA1566900104736 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -383,6 +405,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40B7C1B66C53B6796DDBE6A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Greeks Realm Puzzle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F76B8F92DA1566900104736 /* Sources */ = {
@@ -547,6 +594,7 @@
 		};
 		5F76B90C2DA1566B00104736 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2300FEAF839E7905938C62C1 /* Pods-Greeks Realm Puzzle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -584,6 +632,7 @@
 		};
 		5F76B90D2DA1566B00104736 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4297193662FBCAB61D9810 /* Pods-Greeks Realm Puzzle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
