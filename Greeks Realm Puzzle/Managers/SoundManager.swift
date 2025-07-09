@@ -17,10 +17,9 @@ final class SoundManager: ObservableObject {
     
     private init() {
         setupBackgroundMusic(name: "olimp")
-        setupNotifications()
     }
     
-    func setupNotifications() {
+    func enableNotificationsIfNeeded() {
         NotificationCenter.default.addObserver(self, selector: #selector(pauseMusic), name: UIApplication.willResignActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(resumeMusic), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
@@ -30,7 +29,7 @@ final class SoundManager: ObservableObject {
     }
     
     @objc func resumeMusic() {
-        if isMusicEnabled {
+        if isMusicEnabled && backgroundMusicPlayer?.isPlaying == false {
             backgroundMusicPlayer?.play()
         }
     }
@@ -55,9 +54,7 @@ final class SoundManager: ObservableObject {
             
             do {
                 backgroundMusicPlayer = try AVAudioPlayer(contentsOf: url)
-                guard isMusicEnabled else { return }
                 backgroundMusicPlayer?.numberOfLoops = -1
-                backgroundMusicPlayer?.play()
             } catch {
                 print("Error initializing background music: \(error)")
             }

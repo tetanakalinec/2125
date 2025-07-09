@@ -14,4 +14,8 @@ extension ShapeStyle where Self == Color {
     public static var customBlack:  Color { Color(hex: 0x1D1D1D).opacity(0.6) }
     public static var customBlue:  Color { Color(hex: 0x1F5576) }
     public static var customGrayy:  Color { Color(hex: 0xAFAFAF) }
+    public static var accentGreen: Color { Color(hex: 0x2E3818) }
+    public static var customGrayPrivacy: Color { Color(hex: 0xBBBBBB) }
+    public static var privacyGradientTop: Color { Color(hex: 0xE0EAFC) }
+    public static var privacyGradientBottom: Color { Color(hex: 0xCFDEF3) }
 }

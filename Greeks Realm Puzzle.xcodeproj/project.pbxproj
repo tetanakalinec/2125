@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0C5D872DDE3B7800C5BA68 /* WebSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0C5D862DDE3B7800C5BA68 /* WebSheetViewController.swift */; };
+		5F0C5D892DDE3D3A00C5BA68 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0C5D882DDE3D3A00C5BA68 /* UIViewController+Extensions.swift */; };
+		5F0C5D8B2DDE3EDC00C5BA68 /* WebViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0C5D8A2DDE3EDC00C5BA68 /* WebViewCoordinator.swift */; };
 		5F76B91D2DA1573200104736 /* GRLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91A2DA1573200104736 /* GRLaunchView.swift */; };
 		5F76B91E2DA1573200104736 /* GreeksRealmPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91B2DA1573200104736 /* GreeksRealmPuzzleApp.swift */; };
 		5F76B91F2DA1573200104736 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9172DA1573200104736 /* Preview Assets.xcassets */; };
@@ -24,7 +27,6 @@
 		5F76B9412DA15CF400104736 /* VibrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9292DA15CF400104736 /* VibrationManager.swift */; };
 		5F76B9452DA15DEC00104736 /* InknutAntiqua-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9442DA15DEC00104736 /* InknutAntiqua-Bold.ttf */; };
 		5F76B9482DA15E8100104736 /* olimp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9472DA15E8100104736 /* olimp.mp3 */; };
-		5F76B94B2DA2914900104736 /* GRLaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B94A2DA2914900104736 /* GRLaunchViewModel.swift */; };
 		5F76B94E2DA2921A00104736 /* GRHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B94D2DA2921A00104736 /* GRHomeView.swift */; };
 		5F76B9512DA2927200104736 /* GRMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9502DA2927200104736 /* GRMenuView.swift */; };
 		5F76B9532DA2927900104736 /* GRMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9522DA2927900104736 /* GRMenuViewModel.swift */; };
@@ -42,12 +44,21 @@
 		5F76B9FD2DA2B89100104736 /* GRDifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */; };
 		5F76BA062DA2C02D00104736 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA032DA2C02D00104736 /* GameView.swift */; };
 		5F76BA072DA2C02D00104736 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA042DA2C02D00104736 /* GameViewModel.swift */; };
+		5FA580532DD51C92005534E8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA580522DD51C92005534E8 /* index.html */; };
+		5FA580552DD51D52005534E8 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA580542DD51D52005534E8 /* WebViewContainer.swift */; };
+		5FA580582DD51DBA005534E8 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA580572DD51DBA005534E8 /* PrivacyView.swift */; };
+		5FD64B042DF08BAF00C99D0A /* UserAgentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD64B032DF08BAF00C99D0A /* UserAgentBuilder.swift */; };
+		5FD71AB32DE52E5800D4743B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD71AB22DE52E5800D4743B /* AppDelegate.swift */; };
+		5FDB5E3F2DE5D38300D14FFD /* AppEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB5E3E2DE5D38300D14FFD /* AppEntryPoint.swift */; };
 		FCAB25AFBA0424D50287F3E7 /* Pods_Greeks_Realm_Puzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5D50DEB28238022562B9D1 /* Pods_Greeks_Realm_Puzzle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2300FEAF839E7905938C62C1 /* Pods-Greeks Realm Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Greeks Realm Puzzle.debug.xcconfig"; path = "Target Support Files/Pods-Greeks Realm Puzzle/Pods-Greeks Realm Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
 		2A4297193662FBCAB61D9810 /* Pods-Greeks Realm Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Greeks Realm Puzzle.release.xcconfig"; path = "Target Support Files/Pods-Greeks Realm Puzzle/Pods-Greeks Realm Puzzle.release.xcconfig"; sourceTree = "<group>"; };
+		5F0C5D862DDE3B7800C5BA68 /* WebSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSheetViewController.swift; sourceTree = "<group>"; };
+		5F0C5D882DDE3D3A00C5BA68 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		5F0C5D8A2DDE3EDC00C5BA68 /* WebViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCoordinator.swift; sourceTree = "<group>"; };
 		5F76B8FD2DA1566900104736 /* Greeks Realm Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greeks Realm Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F76B9172DA1573200104736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F76B9192DA1573200104736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +78,6 @@
 		5F76B9442DA15DEC00104736 /* InknutAntiqua-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InknutAntiqua-Bold.ttf"; sourceTree = "<group>"; };
 		5F76B9462DA15E0600104736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		5F76B9472DA15E8100104736 /* olimp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = olimp.mp3; sourceTree = "<group>"; };
-		5F76B94A2DA2914900104736 /* GRLaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRLaunchViewModel.swift; sourceTree = "<group>"; };
 		5F76B94D2DA2921A00104736 /* GRHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRHomeView.swift; sourceTree = "<group>"; };
 		5F76B9502DA2927200104736 /* GRMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRMenuView.swift; sourceTree = "<group>"; };
 		5F76B9522DA2927900104736 /* GRMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRMenuViewModel.swift; sourceTree = "<group>"; };
@@ -85,6 +95,12 @@
 		5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDifficultyLevel.swift; sourceTree = "<group>"; };
 		5F76BA032DA2C02D00104736 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5F76BA042DA2C02D00104736 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5FA580522DD51C92005534E8 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		5FA580542DD51D52005534E8 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		5FA580572DD51DBA005534E8 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		5FD64B032DF08BAF00C99D0A /* UserAgentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgentBuilder.swift; sourceTree = "<group>"; };
+		5FD71AB22DE52E5800D4743B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FDB5E3E2DE5D38300D14FFD /* AppEntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryPoint.swift; sourceTree = "<group>"; };
 		8D5D50DEB28238022562B9D1 /* Pods_Greeks_Realm_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Greeks_Realm_Puzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,7 +122,6 @@
 				2300FEAF839E7905938C62C1 /* Pods-Greeks Realm Puzzle.debug.xcconfig */,
 				2A4297193662FBCAB61D9810 /* Pods-Greeks Realm Puzzle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,6 +163,7 @@
 				5F76B9222DA1573D00104736 /* Screens */,
 				5F76B9212DA1573800104736 /* App */,
 				5F76B9182DA1573200104736 /* Preview Content */,
+				5FA580512DD51C65005534E8 /* Web */,
 				5F76B9192DA1573200104736 /* Assets.xcassets */,
 			);
 			path = "Greeks Realm Puzzle";
@@ -156,6 +172,8 @@
 		5F76B9212DA1573800104736 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				5FD71AB22DE52E5800D4743B /* AppDelegate.swift */,
+				5FDB5E3E2DE5D38300D14FFD /* AppEntryPoint.swift */,
 				5F76B91B2DA1573200104736 /* GreeksRealmPuzzleApp.swift */,
 			);
 			path = App;
@@ -172,6 +190,7 @@
 				5F76B9E42DA29A5800104736 /* AccountScreen */,
 				5F76B9E22DA2985800104736 /* TextScreen */,
 				5F76B94F2DA2926B00104736 /* MenuScreen */,
+				5FA580562DD51DA8005534E8 /* PrivacyScreen */,
 				5F76B94C2DA2920D00104736 /* HomeScreen */,
 				5F76B9492DA289BA00104736 /* LaunchScreen */,
 			);
@@ -239,6 +258,7 @@
 				5F76B9332DA15CF400104736 /* Color+Extensions.swift */,
 				5F76B9342DA15CF400104736 /* ShapeStyle+Extensions.swift */,
 				5F76B9352DA15CF400104736 /* View+Extensions.swift */,
+				5F0C5D882DDE3D3A00C5BA68 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				5F76B91A2DA1573200104736 /* GRLaunchView.swift */,
-				5F76B94A2DA2914900104736 /* GRLaunchViewModel.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -331,6 +350,26 @@
 			path = GameScreen;
 			sourceTree = "<group>";
 		};
+		5FA580512DD51C65005534E8 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				5FA580522DD51C92005534E8 /* index.html */,
+				5FD64B032DF08BAF00C99D0A /* UserAgentBuilder.swift */,
+				5FA580542DD51D52005534E8 /* WebViewContainer.swift */,
+				5F0C5D8A2DDE3EDC00C5BA68 /* WebViewCoordinator.swift */,
+				5F0C5D862DDE3B7800C5BA68 /* WebSheetViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		5FA580562DD51DA8005534E8 /* PrivacyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5FA580572DD51DBA005534E8 /* PrivacyView.swift */,
+			);
+			path = PrivacyScreen;
+			sourceTree = "<group>";
+		};
 		D9EB10F8B6FB1117AE6538C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +415,7 @@
 				};
 			};
 			buildConfigurationList = 5F76B8F82DA1566900104736 /* Build configuration list for PBXProject "Greeks Realm Puzzle" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -397,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA580532DD51C92005534E8 /* index.html in Resources */,
 				5F76B91F2DA1573200104736 /* Preview Assets.xcassets in Resources */,
 				5F76B9452DA15DEC00104736 /* InknutAntiqua-Bold.ttf in Resources */,
 				5F76B9202DA1573200104736 /* Assets.xcassets in Resources */,
@@ -438,33 +479,40 @@
 			files = (
 				5F76B91D2DA1573200104736 /* GRLaunchView.swift in Sources */,
 				5F76B9E82DA29A6D00104736 /* GRAccountViewModel.swift in Sources */,
+				5FD71AB32DE52E5800D4743B /* AppDelegate.swift in Sources */,
 				5F76B9F52DA2A7EC00104736 /* GRGameTypeView.swift in Sources */,
 				5F76B91E2DA1573200104736 /* GreeksRealmPuzzleApp.swift in Sources */,
+				5F0C5D892DDE3D3A00C5BA68 /* UIViewController+Extensions.swift in Sources */,
+				5FD64B042DF08BAF00C99D0A /* UserAgentBuilder.swift in Sources */,
 				5F76B9552DA294D200104736 /* CustomToggleStyle.swift in Sources */,
 				5F76B9372DA15CF400104736 /* PhotoPicker.swift in Sources */,
 				5F76B9E62DA29A5F00104736 /* GRAccountView.swift in Sources */,
 				5F76B9F02DA29F3300104736 /* GRShopView.swift in Sources */,
 				5F76B94E2DA2921A00104736 /* GRHomeView.swift in Sources */,
 				5F76B9ED2DA29DDD00104736 /* GRLeaderboardViewModel.swift in Sources */,
+				5FDB5E3F2DE5D38300D14FFD /* AppEntryPoint.swift in Sources */,
 				5F76B9382DA15CF400104736 /* View+Extensions.swift in Sources */,
 				5F76B9FA2DA2B85200104736 /* GRLevelViewModel.swift in Sources */,
 				5F76B9FD2DA2B89100104736 /* GRDifficultyLevel.swift in Sources */,
+				5FA580552DD51D52005534E8 /* WebViewContainer.swift in Sources */,
 				5F76B9392DA15CF400104736 /* CustomBackground.swift in Sources */,
 				5F76B93A2DA15CF400104736 /* Font+Extensions.swift in Sources */,
 				5F76B9F82DA2B84C00104736 /* GRLevelView.swift in Sources */,
 				5F76B93B2DA15CF400104736 /* CameraPicker.swift in Sources */,
 				5F76B93C2DA15CF400104736 /* Color+Extensions.swift in Sources */,
 				5F76B9512DA2927200104736 /* GRMenuView.swift in Sources */,
+				5F0C5D872DDE3B7800C5BA68 /* WebSheetViewController.swift in Sources */,
 				5F76B93D2DA15CF400104736 /* PhotoManager.swift in Sources */,
-				5F76B94B2DA2914900104736 /* GRLaunchViewModel.swift in Sources */,
 				5F76B93E2DA15CF400104736 /* SoundManager.swift in Sources */,
 				5F76BA062DA2C02D00104736 /* GameView.swift in Sources */,
 				5F76BA072DA2C02D00104736 /* GameViewModel.swift in Sources */,
 				5F76B93F2DA15CF400104736 /* ShapeStyle+Extensions.swift in Sources */,
+				5FA580582DD51DBA005534E8 /* PrivacyView.swift in Sources */,
 				5F76B9F22DA29F3900104736 /* GRShopViewModel.swift in Sources */,
 				5F76B9532DA2927900104736 /* GRMenuViewModel.swift in Sources */,
 				5F76B9EB2DA29DD700104736 /* GRLeaderboardView.swift in Sources */,
 				5F76B9402DA15CF400104736 /* AlbumPicker.swift in Sources */,
+				5F0C5D8B2DDE3EDC00C5BA68 /* WebViewCoordinator.swift in Sources */,
 				5F76B9E32DA2985800104736 /* GRTextView.swift in Sources */,
 				5F76B9412DA15CF400104736 /* VibrationManager.swift in Sources */,
 			);
@@ -599,25 +647,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Greeks Realm Puzzle/Preview Content\"";
-				DEVELOPMENT_TEAM = 7M49YV4H68;
+				DEVELOPMENT_TEAM = PAA5TW4KSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Greeks Realm Puzzle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take a profile photo for your account.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to allow voice input or calls.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kalynetsdev.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -637,25 +686,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Greeks Realm Puzzle/Preview Content\"";
-				DEVELOPMENT_TEAM = 7M49YV4H68;
+				DEVELOPMENT_TEAM = PAA5TW4KSC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Greeks Realm Puzzle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take a profile photo for your account.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to allow voice input or calls.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kalynetsdev.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

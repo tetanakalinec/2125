@@ -2,16 +2,25 @@ import SwiftUI
 
 struct GRLaunchView: View {
     
-    @StateObject private var viewModel = GRLaunchViewModel()
+    @AppStorage("firstOpenApp") var firstOpenApp = true
+    @AppStorage("stringURL") var stringURL = ""
+    
+    @State private var showPrivacy = false
+    @State private var showHome = false
 
     var body: some View {
         NavigationView {
             VStack {
-               
-                // - Transition
+                NavigationLink(
+                    destination: PrivacyView(),
+                    isActive: $showPrivacy
+                ) {
+                    EmptyView()
+                }
+                
                 NavigationLink(
                     destination: GRHomeView(),
-                    isActive: $viewModel.navigateToHome
+                    isActive: $showHome
                 ) {
                     EmptyView()
                 }
@@ -28,11 +37,17 @@ struct GRLaunchView: View {
                 }
             )
         }
-        .navigationViewStyle(StackNavigationViewStyle())
         .hideNavigationBar()
         .onAppear {
-            viewModel.onViewAppear()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                if !firstOpenApp {
+                    showHome = true
+                } else {
+                    showPrivacy = true
+                }
+            }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

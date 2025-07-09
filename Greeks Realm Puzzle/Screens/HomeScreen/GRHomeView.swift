@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct GRHomeView: View {
+    
+    let soundManager = SoundManager.shared
+    
     var body: some View {
         VStack {
             header
@@ -8,7 +11,6 @@ struct GRHomeView: View {
             playButton
         }
         .padding(20)
-        .hideNavigationBar()
         .background(
             ZStack {
                 Color(.white)
@@ -18,6 +20,14 @@ struct GRHomeView: View {
                     .ignoresSafeArea()
             }
         )
+        .hideNavigationBar()
+        .onAppear {
+            AppDelegate.orientationLock = [.portrait]
+            if soundManager.isMusicEnabled {
+                soundManager.enableNotificationsIfNeeded()
+                soundManager.toggleMusic(true)
+            }
+        }
     }
 }
 
