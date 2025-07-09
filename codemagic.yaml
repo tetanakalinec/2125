@@ -11,7 +11,7 @@ workflows:
         bundle_identifier: com.kalynetsdev.app
       vars:
         BUNDLE_ID: "com.kalynetsdev.app"
-        XCODE_WORKSPACE: "Greeks Realm Puzzle.xcworkspace" # <-- Put the name of your Xcode workspace here
+        XCODE_WORKSPACE: "project.xcworkspace" # <-- Put the name of your Xcode workspace here
         XCODE_SCHEME: "Greeks Realm Puzzle" # <-- Put the name of your Xcode scheme here
         APP_STORE_APPLE_ID: 6744930325
       xcode: latest
