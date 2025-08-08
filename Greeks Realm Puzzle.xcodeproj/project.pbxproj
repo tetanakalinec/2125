@@ -44,6 +44,7 @@
 		5F76B9FD2DA2B89100104736 /* GRDifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */; };
 		5F76BA062DA2C02D00104736 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA032DA2C02D00104736 /* GameView.swift */; };
 		5F76BA072DA2C02D00104736 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA042DA2C02D00104736 /* GameViewModel.swift */; };
+		5FA19BFA2E45D1720003B38E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA19BF92E45D1720003B38E /* GoogleService-Info.plist */; };
 		5FA580532DD51C92005534E8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA580522DD51C92005534E8 /* index.html */; };
 		5FA580552DD51D52005534E8 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA580542DD51D52005534E8 /* WebViewContainer.swift */; };
 		5FA580582DD51DBA005534E8 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA580572DD51DBA005534E8 /* PrivacyView.swift */; };
@@ -95,6 +96,7 @@
 		5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDifficultyLevel.swift; sourceTree = "<group>"; };
 		5F76BA032DA2C02D00104736 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5F76BA042DA2C02D00104736 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5FA19BF92E45D1720003B38E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5FA580522DD51C92005534E8 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		5FA580542DD51D52005534E8 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
 		5FA580572DD51DBA005534E8 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		5F76B91C2DA1573200104736 /* Greeks Realm Puzzle */ = {
 			isa = PBXGroup;
 			children = (
+				5FA19BF92E45D1720003B38E /* GoogleService-Info.plist */,
 				5F76B9462DA15E0600104736 /* Info.plist */,
 				5F76B9262DA15CF400104736 /* Helpers */,
 				5F76B92A2DA15CF400104736 /* Managers */,
@@ -389,6 +392,7 @@
 				5F76B8F92DA1566900104736 /* Sources */,
 				5F76B8FA2DA1566900104736 /* Frameworks */,
 				5F76B8FB2DA1566900104736 /* Resources */,
+				67E00B4B880B9E688ABB546D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -442,6 +446,7 @@
 				5F76B9452DA15DEC00104736 /* InknutAntiqua-Bold.ttf in Resources */,
 				5F76B9202DA1573200104736 /* Assets.xcassets in Resources */,
 				5F76B9482DA15E8100104736 /* olimp.mp3 in Resources */,
+				5FA19BFA2E45D1720003B38E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +473,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E00B4B880B9E688ABB546D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Greeks Realm Puzzle/Pods-Greeks Realm Puzzle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Greeks Realm Puzzle/Pods-Greeks Realm Puzzle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Greeks Realm Puzzle/Pods-Greeks Realm Puzzle-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
