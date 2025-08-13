@@ -49,8 +49,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         print("APNs token:", apns)
     }
 
-    func application(_ application: UIApplication,
-                     didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    func application(
+        _ application: UIApplication,
+        didFailToRegisterForRemoteNotificationsWithError error: Error
+    ) {
         print("APNs register failed:", error)
     }
 }
@@ -74,36 +76,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 }
 
 extension AppDelegate: MessagingDelegate {
-    func messaging(
-        _ messaging: Messaging,
-        didReceiveRegistrationToken fcmToken: String?
-    ) {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         guard let token = fcmToken, !token.isEmpty else { return }
         print("FCM token:", token)
-        sendFCMTokenToServer(token)
-    }
-
-    private func sendFCMTokenToServer(_ token: String) {
-        guard let url = URL(string: "https://thunderolimp.life/getPlayerStat.json") else { return }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
-        let body: [String: Any] = [
-            "bundle": Bundle.main.bundleIdentifier ?? "",
-            "fcmToken": token,
-            "platform": "ios"
-        ]
-
-        request.httpBody = try? JSONSerialization.data(withJSONObject: body)
-
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
-                print("Error sending FCM token to server:", error)
-            } else {
-                print("FCM token sent successfully to server.")
-            }
-        }.resume()
+        UserDefaults.standard.set(token, forKey: "fcmToken")
     }
 }

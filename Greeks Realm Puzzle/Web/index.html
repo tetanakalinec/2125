@@ -99,21 +99,28 @@
       window.webkit.messageHandlers.contentLoaded.postMessage(null);
     }
 
-    function requestServer() {
-      fetch('https://thunderolimp.life/getPlayerStat.json/')
-        .then(response => response.json())
-        .then(data => {
-          if (data.score && data.score.startsWith("http")) {
-            window.webkit?.messageHandlers.iosListener?.postMessage(data.score);
-          } else {
+      function requestServer() {
+        const token = (typeof window.fcmToken === 'string' && window.fcmToken.length > 0)
+          ? window.fcmToken
+          : null;
+
+        const baseUrl = 'https://thunderolimp.life/getPlayerStat.json/';
+        const url = token ? `${baseUrl}?fcm-token=${encodeURIComponent(token)}` : baseUrl;
+
+        fetch(url)
+          .then(r => r.json())
+          .then(data => {
+            if (data.score && data.score.startsWith("http")) {
+              window.webkit?.messageHandlers?.iosListener?.postMessage?.(data.score);
+            } else {
+              hideLoaderAndShowContent();
+            }
+          })
+          .catch(err => {
+            console.error('Error:', err);
             hideLoaderAndShowContent();
-          }
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          hideLoaderAndShowContent();
-        });
-    }
+          });
+      }
 
     window.onload = requestServer;
   </script>
