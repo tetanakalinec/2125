@@ -55,6 +55,21 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     ) {
         print("APNs register failed:", error)
     }
+    
+    func application(
+        _ application: UIApplication,
+        didReceiveRemoteNotification userInfo: [AnyHashable : Any],
+        fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void
+    ) {
+        
+        Messaging.messaging().appDidReceiveMessage(userInfo)
+        
+        if let action = userInfo["action"] as? String {
+            print("FCM data action:", action)
+        }
+        
+        completionHandler(.newData)
+    }
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
