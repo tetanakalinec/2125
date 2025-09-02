@@ -32,7 +32,7 @@ struct AppEntryPoint: View {
             .transition(.opacity)
             .animation(.easeInOut(duration: 0.3), value: selectedRoute)
         }
-        .onAppear {
+        .onAppear(perform: {
             DispatchQueue.main.async {
                 if !stringURL.isEmpty {
                     AppDelegate.orientationLock = [.portrait, .landscapeLeft, .landscapeRight]
@@ -42,6 +42,6 @@ struct AppEntryPoint: View {
                     selectedRoute = .launch
                 }
             }
-        }
+        })
     }
 }

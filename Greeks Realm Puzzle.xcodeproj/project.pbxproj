@@ -11,6 +11,7 @@
 		5F0C5D872DDE3B7800C5BA68 /* WebSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0C5D862DDE3B7800C5BA68 /* WebSheetViewController.swift */; };
 		5F0C5D892DDE3D3A00C5BA68 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0C5D882DDE3D3A00C5BA68 /* UIViewController+Extensions.swift */; };
 		5F0C5D8B2DDE3EDC00C5BA68 /* WebViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0C5D8A2DDE3EDC00C5BA68 /* WebViewCoordinator.swift */; };
+		5F1D714D2E65EB0A00396E20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F1D714C2E65EB0A00396E20 /* GoogleService-Info.plist */; };
 		5F76B91D2DA1573200104736 /* GRLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91A2DA1573200104736 /* GRLaunchView.swift */; };
 		5F76B91E2DA1573200104736 /* GreeksRealmPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B91B2DA1573200104736 /* GreeksRealmPuzzleApp.swift */; };
 		5F76B91F2DA1573200104736 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F76B9172DA1573200104736 /* Preview Assets.xcassets */; };
@@ -45,7 +46,6 @@
 		5F76B9FD2DA2B89100104736 /* GRDifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */; };
 		5F76BA062DA2C02D00104736 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA032DA2C02D00104736 /* GameView.swift */; };
 		5F76BA072DA2C02D00104736 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76BA042DA2C02D00104736 /* GameViewModel.swift */; };
-		5FA19BFA2E45D1720003B38E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA19BF92E45D1720003B38E /* GoogleService-Info.plist */; };
 		5FA580532DD51C92005534E8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA580522DD51C92005534E8 /* index.html */; };
 		5FA580552DD51D52005534E8 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA580542DD51D52005534E8 /* WebViewContainer.swift */; };
 		5FA580582DD51DBA005534E8 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA580572DD51DBA005534E8 /* PrivacyView.swift */; };
@@ -61,6 +61,7 @@
 		5F0C5D882DDE3D3A00C5BA68 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		5F0C5D8A2DDE3EDC00C5BA68 /* WebViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCoordinator.swift; sourceTree = "<group>"; };
 		5F16C0922E45D6BE0029FFDF /* Greeks Realm Puzzle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Greeks Realm Puzzle.entitlements"; sourceTree = "<group>"; };
+		5F1D714C2E65EB0A00396E20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F76B8FD2DA1566900104736 /* Greeks Realm Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greeks Realm Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F76B9172DA1573200104736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F76B9192DA1573200104736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +98,6 @@
 		5F76B9FC2DA2B89100104736 /* GRDifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDifficultyLevel.swift; sourceTree = "<group>"; };
 		5F76BA032DA2C02D00104736 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5F76BA042DA2C02D00104736 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
-		5FA19BF92E45D1720003B38E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5FA580522DD51C92005534E8 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		5FA580542DD51D52005534E8 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
 		5FA580572DD51DBA005534E8 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				5F16C0922E45D6BE0029FFDF /* Greeks Realm Puzzle.entitlements */,
-				5FA19BF92E45D1720003B38E /* GoogleService-Info.plist */,
+				5F1D714C2E65EB0A00396E20 /* GoogleService-Info.plist */,
 				5F76B9462DA15E0600104736 /* Info.plist */,
 				5F76B9262DA15CF400104736 /* Helpers */,
 				5F76B92A2DA15CF400104736 /* Managers */,
@@ -448,7 +448,7 @@
 				5F76B9452DA15DEC00104736 /* InknutAntiqua-Bold.ttf in Resources */,
 				5F76B9202DA1573200104736 /* Assets.xcassets in Resources */,
 				5F76B9482DA15E8100104736 /* olimp.mp3 in Resources */,
-				5FA19BFA2E45D1720003B38E /* GoogleService-Info.plist in Resources */,
+				5F1D714D2E65EB0A00396E20 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

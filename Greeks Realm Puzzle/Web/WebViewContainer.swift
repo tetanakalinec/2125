@@ -31,6 +31,7 @@ struct WebViewContainer: UIViewRepresentable {
         }()
 
         let injectJS = "window.fcmToken = \(tokenJSON);"
+        print("Inject JS === \(injectJS)")
         let userScript = WKUserScript(source: injectJS, injectionTime: .atDocumentStart, forMainFrameOnly: true)
         webConfiguration.userContentController.addUserScript(userScript)
 
