@@ -27,6 +27,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         Messaging.messaging().isAutoInitEnabled = true
         log("✅ Firebase configured, isAutoInitEnabled=\(Messaging.messaging().isAutoInitEnabled)")
 
+        UserDefaults.standard.set(0, forKey: "fcmDistinctSinceLaunch")
+        UserDefaults.standard.removeObject(forKey: "fcmPrevToken")
+
         registerForPushNotifications(application: application)
         return true
     }
@@ -41,18 +44,14 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Messaging.messaging().apnsToken = deviceToken
         UserDefaults.standard.set(true, forKey: "apnsRegistered")
+        UserDefaults.standard.set(Date().timeIntervalSince1970, forKey: "apnsRegisteredAt")
         NotificationCenter.default.post(name: .apnsRegistered, object: nil)
 
         Messaging.messaging().token { [weak self] token, error in
-            if let error = error {
-                self?.log("❗️ FCM token re-fetch error (after APNs): \(error)")
-                return
-            }
-            guard let token, !token.isEmpty else {
-                self?.log("⚠️ FCM token empty on re-fetch after APNs")
-                return
-            }
+            if let error = error { self?.log("❗️ FCM token re-fetch error (after APNs): \(error)"); return }
+            guard let token, !token.isEmpty else { self?.log("⚠️ FCM token empty on re-fetch after APNs"); return }
             self?.saveAndBroadcastFCMToken(token, source: "after APNs")
+            StartupGate.shared.notifyFCMTokenUpdated()
         }
     }
 
@@ -79,15 +78,22 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         center.delegate = self
 
         center.requestAuthorization(options: [.alert, .badge, .sound]) { [weak self] granted, error in
-            if let error = error {
-                self?.log("🔔 Permission error: \(error)")
-            } else {
-                self?.log("🔔 Notification permission granted: \(granted)")
+            self?.log(error != nil ? "🔔 Permission error: \(String(describing: error))" : "🔔 Notification permission granted: \(granted)")
+
+            StartupGate.shared.markNotificationsResolved()
+
+            if granted {
+                DispatchQueue.main.async {
+                    self?.log("📮 registerForRemoteNotifications()")
+                    application.registerForRemoteNotifications()
+                }
             }
-            guard granted else { return }
-            DispatchQueue.main.async {
-                self?.log("📮 registerForRemoteNotifications()")
-                application.registerForRemoteNotifications()
+
+            Messaging.messaging().token { [weak self] token, error in
+                if let error = error { self?.log("❗️ FCM token fetch after notif resolve error: \(error)"); return }
+                guard let token, !token.isEmpty else { self?.log("⚠️ FCM token empty after notif resolve"); return }
+                self?.saveAndBroadcastFCMToken(token, source: "after notif resolve")
+                StartupGate.shared.notifyFCMTokenUpdated()
             }
         }
     }
@@ -97,6 +103,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaults.standard.set(token, forKey: "fcmToken")
         let now = Date().timeIntervalSince1970
         UserDefaults.standard.set(now, forKey: "fcmTokenUpdatedAt")
+
+        let prevDistinct = UserDefaults.standard.string(forKey: "fcmPrevToken")
+        if prevDistinct != token {
+            let cnt = UserDefaults.standard.integer(forKey: "fcmDistinctSinceLaunch") + 1
+            UserDefaults.standard.set(cnt, forKey: "fcmDistinctSinceLaunch")
+            UserDefaults.standard.set(token, forKey: "fcmPrevToken")
+        }
 
         if prev == token {
             log("🔥 FCM token (\(source), SAME): \(token)")
@@ -109,6 +122,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             object: nil,
             userInfo: ["token": token, "updatedAt": now]
         )
+
+        StartupGate.shared.notifyFCMTokenUpdated()
     }
 
     fileprivate func log(_ message: String) {
