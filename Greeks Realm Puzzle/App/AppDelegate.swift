@@ -8,14 +8,18 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     static var orientationLock: UIInterfaceOrientationMask = .portrait
 
     // MARK: - Orientation
-    func application(_ application: UIApplication,
-                     supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+    func application(
+        _ application: UIApplication,
+        supportedInterfaceOrientationsFor window: UIWindow?
+    ) -> UIInterfaceOrientationMask {
         Self.orientationLock
     }
 
     // MARK: - Launch
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
         log("🚀 didFinishLaunching")
 
         FirebaseApp.configure()
