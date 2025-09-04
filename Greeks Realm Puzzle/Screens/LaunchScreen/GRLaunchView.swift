@@ -28,15 +28,27 @@ struct GRLaunchView: View {
     var body: some View {
         NavigationView {
             VStack {
+                
+                Image(.olimTitle)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 150)
+                Image(.loader)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 100)
+                    .offset(y: 100)
+                Spacer()
+                
                 NavigationLink(destination: PrivacyView(), isActive: $showPrivacy) { EmptyView() }
                 NavigationLink(destination: GRHomeView(),    isActive: $showHome)    { EmptyView() }
             }
-            .padding()
+            .padding(.top, 100)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(
                 ZStack {
                     Color(.white)
-                    Image(.launchBackground)
+                    Image(.emptyBackground)
                         .resizable()
                         .scaledToFill()
                         .ignoresSafeArea()
@@ -139,3 +151,7 @@ struct GRLaunchView: View {
         }
     }
 }
+
+#Preview(body: {
+    GRLevelView()
+})

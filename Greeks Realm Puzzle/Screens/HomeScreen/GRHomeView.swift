@@ -5,16 +5,32 @@ struct GRHomeView: View {
     let soundManager = SoundManager.shared
     
     var body: some View {
-        VStack {
-            header
-            Spacer()
-            playButton
+        ZStack {
+            VStack {
+                Image(.olimTitle)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 150)
+                
+                Spacer()
+                Image(.girl)
+                    .resizable()
+                    .scaledToFit()
+            }
+            .padding([.top, .horizontal], 20)
+            .padding(.top, 70)
+            .ignoresSafeArea(.all, edges: .bottom)
+            VStack {
+                header
+                Spacer()
+                playButton
+            }
+            .padding(20)
         }
-        .padding(20)
         .background(
             ZStack {
                 Color(.white)
-                Image(.homeBackground)
+                Image(.emptyBackground)
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()

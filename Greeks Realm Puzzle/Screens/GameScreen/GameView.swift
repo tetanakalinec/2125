@@ -209,6 +209,10 @@ extension GameView {
 
 #Preview {
     GameView(
-        viewModel: GameViewModel(difficultyLevel: .medium, gameNumber: 1, gameType: .arcada)
+        viewModel: GameViewModel(
+            difficultyLevel: .easy,
+            gameNumber: 1,
+            gameType: .campaign
+        )
     )
 }
